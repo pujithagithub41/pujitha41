@@ -1,0 +1,24 @@
+import java.io.IOExecption;
+import java.io.printwriter;
+import javax.servlet.servlet execption;
+import javax.servlet.http cookies;
+import javax.servlet.http.http servlet;
+import javax.servlet.http.HTTP request;
+import javax.servlet.http.HTTP response;
+{
+public class getservlet cookies extends servlet execption
+{
+public void(HTTP servlet Request request,HTTP servlet Response)throws IOExecptions,servlet execption;
+Cookies[] cookies=request.Getcookies();
+Response.set context type("text/html");
+printWriter pw=response.Get writer();
+pw.println("<br>");
+for(i=0;i<cookies[i].length:i++)
+{
+string name=cookies[i].get name();
+string value=cookies[i].get value();
+}
+pw.println(name="+name+",value="+value+");
+}
+pw.close();
+}
